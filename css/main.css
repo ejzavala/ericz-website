@@ -143,8 +143,9 @@ header p {
 
 #skills {
 
-	background: #f9ceb7;
+	background: black;
 	text-align: center;
+	border: 3px solid #00ff00;
 }
 
 #skills .full-width {
@@ -163,6 +164,7 @@ header p {
 	line-height: 30px;
 	width: 190px;
 	margin: 0 auto;
+	color: white;
 }
 
 #skills p {
@@ -171,6 +173,7 @@ header p {
 	font-size: 18px;
 	line-height: 25px;
 	padding: 0 50px;
+	color: white;
 
 }
 
