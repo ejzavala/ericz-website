@@ -33,8 +33,14 @@ body{
 header {
 
 	height: 800px;
-	background: url("../img/desktop-cropped.jpg") no-repeat center;
+	background: 
+	  linear-gradient(
+          rgba(0, 0, 0, 0.4), 
+          rgba(0, 0, 0, 0.4)
+        ),
+	  url("../img/desktop-cropped.jpg") no-repeat center;
 	background-size: cover;
+	background-blend-mode: darken;
 }
 
 header h1{
@@ -42,7 +48,7 @@ header h1{
 	padding: 65px 0 65px 65px;
 	font-family: 'Lora', bold;
 	font-size: 30px;
-	color: #bbc085;
+	color: white;
 }
 
 nav {
@@ -61,7 +67,7 @@ nav ul li a {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 18px ;
-	color: #828282;
+	color: white;
 	padding-left: 80px;
 }
 
@@ -72,13 +78,44 @@ header h2 {
 	font-family: 'Lora', bold;
 	font-size: 65px;
 	line-height: 80px;
-	color: #9b9b9b;
+	color: white;
 	padding: 20px 0 20px 25px;
 }
 
-header h2 span {
-	color: black;
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+header p {
+ border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+ /* font-family: 'Source Code Pro', monospace;*/  
+  font-size: 75px;
+  color: #00ff00;
+  letter-spacing: 3px;S
+  
+ }
+
+/* Animation */
+header p {
+  animation: animated-hello 3.5s steps(29,end) 1s 1 normal both,
+             animated-cursor 0.9s steps(29,end) infinite;
 }
+
+/* text animation */
+
+@keyframes animated-hello{
+  from{width: 0;}
+  to{width: 500px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
 /*ABOUT*/
 
 #about .full-width {
