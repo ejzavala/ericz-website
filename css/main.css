@@ -2,8 +2,8 @@ body{
 
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #2b2b2b;
-	max-width: 1500px;
-	width: 100%;
+	max-width: 1300px;
+	width: 80%;
 	margin: 20px auto;
 	overflow: auto;
 }
@@ -11,11 +11,8 @@ body{
 #about, #skills, #contact {
 
 	height: 700px;
-	max-width: 1200px;
-	width: 100%;
-	clear: both;
 	overflow: auto;
-	margin: 0 auto;
+	
 }
 
 /*GRID*/
@@ -23,7 +20,7 @@ body{
 .full-width {
 
 	max-width: 1200px
-	width: 50%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -80,6 +77,7 @@ nav ul li a {
 	font-size: 18px ;
 	color: white;
 	padding-left: 80px;
+	
 }
 
 header h2 {
